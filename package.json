@@ -1,0 +1,21 @@
+{
+  "name": "simple-api",
+  "version": "1.0.0",
+  "description": "simple rest api using expressJS && swagger UI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["api", "expressJS"],
+  "author": "ArifzynXD",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ArifzynXD/simple-api/issues"
+  },
+  "homepage": "https://github.com/ArifzynXD/simple-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  }
+}
