@@ -1,9 +1,9 @@
 module.exports = {
   openapi: '3.0.0',
   info: {
-    title: 'Express API with Swagger',
+    title: 'onesytex APIs ',
     version: '1.0.0',
-    description: 'API documentation using Swagger',
+    description: 'api by mr.one with Swagger ui',
   },
   paths: {
     '/api/data': {
