@@ -14,8 +14,6 @@ const CSS_URL =
 
 const PORT = process.env.PORT || 2001;
 dotenv.config();
-
-app.use(morgan("dev"));
 app.use(cors());
 
 const options = {
