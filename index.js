@@ -9,7 +9,7 @@ const port = 3000;
 
 const swaggerOptions = {
   swaggerDefinition: swaggerDefinitions,
-  apis: ['./routes/*.js'],
+  apis: ['./routes/index.js'],
 };
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
