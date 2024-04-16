@@ -21,7 +21,7 @@ const swaggerOptions = {
       },
     ],
   },
-  apis: ['path/to/your/api/endpoints/*.js'],
+  apis: ['./routes/*.js'],
 };
 
 
