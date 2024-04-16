@@ -14,11 +14,8 @@ const swaggerOptions = {
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
-app.get('/', (req, res) => {
-  res.send("Welcome To Simple-api API") 
-});
 
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(routes);
 
 app.listen(port, () => {
