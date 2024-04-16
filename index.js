@@ -6,6 +6,8 @@ const routes = require('./routes');
 
 const app = express();
 const port = 3000;
+const CSS_URL =
+  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 
 const swaggerOptions = {
     definition: {
@@ -28,7 +30,7 @@ const swaggerOptions = {
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
 
-app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec, { customCssUrl: CSS_URL }));
 app.use(routes);
 
 app.listen(port, () => {
