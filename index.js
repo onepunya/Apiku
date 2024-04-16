@@ -1,4 +1,5 @@
 const express = require('express');
+const dotenv = require("dotenv")
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDefinitions = require('./swagger/swaggerDefinition.js');
