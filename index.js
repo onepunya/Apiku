@@ -8,9 +8,22 @@ const app = express();
 const port = 3000;
 
 const swaggerOptions = {
-  swaggerDefinition: swaggerDefinitions,
-  apis: ['./routes/index.js'],
+    definition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'Your API Title',
+      version: '1.0.0',
+      description: 'API Documentation for Your API',
+    },
+    servers: [
+      {
+        url: 'http://localhost:3000',
+      },
+    ],
+  },
+  apis: ['path/to/your/api/endpoints/*.js'],
 };
+
 
 const swaggerSpec = swaggerJSDoc(swaggerOptions);
 
