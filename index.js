@@ -9,7 +9,6 @@ const port = 3000;
 const CSS_URL =
   "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 
-const app = express();
 
 app.use(bodyParser.json()); // to use body object in requests
 const PORT = process.env.PORT || 2001;
@@ -47,7 +46,7 @@ const specs = swaggerJsDoc(options);
 // app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 app.use(
-  "/api-docs",
+  "/",
   swaggerUI.serve,
   swaggerUI.setup(specs, { customCssUrl: CSS_URL })
 );
